@@ -724,6 +724,7 @@ nav ul li a:hover, nav ul li a:focus {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
   padding: 65px 0 300px 0;
   height: auto;
 }
