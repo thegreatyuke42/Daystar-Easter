@@ -1166,13 +1166,34 @@ ul.legals li:last-child::after {
 }
 
 /* ==========================================================================
+18. CUSTOM
+========================================================================== */
+
+@font-face {
+    font-family: Fancy;
+    src: url('visby_medium.ttf') format('truetype'),
+         url('visby_medium.otf') format('opentype'),
+         url('visby_medium.woff') format('woff');
+}
+
+h1.title{
+  font-family: Fancy, sans-serif;
+  letter-spacing: 4.28571429rem;
+  margin-right: -4.28571429rem;
+  font-size: 125px;
+}
+
+p.sub-title{
+  font-family: Fancy, sans-serif;
+  font-size: 30px;
+  letter-spacing: 1.07142857rem;
+  margin-right: -1.07142857rem;
+}
+
+/* ==========================================================================
 17. MEDIA QUERIES
 ========================================================================== */
 
-/* 320px (iPhone) */
-
-@media screen and (max-width:320px) {
-}
 
 /* 480px (WVGA - Low End Windows Phone) */
 
@@ -1236,6 +1257,40 @@ ul.legals li:last-child::after {
 @media screen and (max-width:1280px) {
   .wp3 {
     background-position: 50px 0;
+  }
+  h1.title{
+    letter-spacing: 2.14285714rem;
+    margin-right: -2.14285714rem;
+    font-size: 7.14285714rem;
+  }
+  p.sub-title{
+    letter-spacing: 0.8rem;
+    margin-right: -0.8rem;
+  }
+}
+
+@media screen and (max-width: 630px){
+  h1.title{
+    letter-spacing: 1.07142857rem;
+    margin-right: -1.07142857rem;
+    font-size: 5.35714286rem;
+  }
+  p.sub-title{
+    letter-spacing: 0.2rem;
+    margin-right: -0.2rem;
+  }
+}
+
+/* 320px (iPhone) */
+
+@media screen and (max-width:450px) {
+  h1.title{
+    letter-spacing: 0.71428571rem;
+    margin-right: -0.71428571rem;
+    font-size: 3.57142857rem;
+  }
+  p.sub-title{
+    font-size: 20px;
   }
 }
 
